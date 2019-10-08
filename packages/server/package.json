@@ -2,7 +2,7 @@
   "name": "xperion-cms",
   "private": true,
   "version": "0.1.0",
-  "description": "Essa é a estrutura do backend da XPerion feita com o Strapi.",
+  "description": "Essa é a estrutura do CMS da XPerion feita com o Strapi.",
   "main": "./server.js",
   "scripts": {
     "setup": "cd admin && npm run setup",
