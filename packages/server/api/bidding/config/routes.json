@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/biddings",
+      "handler": "Bidding.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/biddings/count",
+      "handler": "Bidding.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/biddings/:_id",
+      "handler": "Bidding.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/biddings",
+      "handler": "Bidding.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/biddings/:_id",
+      "handler": "Bidding.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/biddings/:_id",
+      "handler": "Bidding.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

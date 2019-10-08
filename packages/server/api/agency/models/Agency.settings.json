@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "agency",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "telephone": {
+      "type": "integer"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "openingHours": {
+      "type": "string",
+      "required": true
+    },
+    "biddings": {
+      "collection": "bidding",
+      "via": "agency"
+    }
+  }
+}

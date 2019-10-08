@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "denuncia",
+  "info": {
+    "name": "complaint",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "satisfaction": {
+      "type": "boolean",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "bidding": {
+      "model": "bidding",
+      "via": "complaints"
+    }
+  }
+}

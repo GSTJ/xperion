@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "punishment",
+  "info": {
+    "name": "punishment",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "required": true,
+      "type": "text"
+    },
+    "bidding": {
+      "model": "bidding",
+      "via": "punishments"
+    }
+  }
+}
