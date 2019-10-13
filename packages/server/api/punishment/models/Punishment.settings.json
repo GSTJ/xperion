@@ -20,6 +20,12 @@
     "bidding": {
       "model": "bidding",
       "via": "punishments"
+    },
+    "date": {
+      "type": "date"
+    },
+    "value": {
+      "type": "decimal"
     }
   }
 }

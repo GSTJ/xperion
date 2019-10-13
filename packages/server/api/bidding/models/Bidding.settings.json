@@ -65,6 +65,10 @@
     "agency": {
       "model": "agency",
       "via": "biddings"
+    },
+    "description": {
+      "required": true,
+      "type": "text"
     }
   }
 }
