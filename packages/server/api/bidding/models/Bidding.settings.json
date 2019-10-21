@@ -28,7 +28,8 @@
         "road",
         "hospital",
         "square",
-        "school"
+        "school",
+        "sport"
       ],
       "type": "enumeration"
     },
