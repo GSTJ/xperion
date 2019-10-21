@@ -27,7 +27,8 @@
         "bridge",
         "road",
         "hospital",
-        "square"
+        "square",
+        "school"
       ],
       "type": "enumeration"
     },
