@@ -30,6 +30,11 @@
       "model": "file",
       "via": "related",
       "plugin": "upload"
+    },
+    "open": {
+      "required": true,
+      "default": true,
+      "type": "boolean"
     }
   }
 }
