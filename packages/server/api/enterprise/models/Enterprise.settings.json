@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "enterprise",
   "info": {
     "name": "enterprise",
     "description": ""
@@ -25,6 +25,11 @@
     "biddings": {
       "collection": "bidding",
       "via": "enterprise"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
     }
   }
 }
