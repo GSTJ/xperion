@@ -1,4 +1,5 @@
-import React, {useState, useCallback} from 'react';
+import React, {useState, useCallback, useEffect} from 'react';
+import SplashScreen from 'react-native-splash-screen';
 import {useAxios} from 'utils';
 import {Map, Preview} from 'components/molecules';
 import {
@@ -27,6 +28,10 @@ export default props => {
     await refetch();
     setRefreshing(false);
   }, [refetch]);
+
+  useEffect(() => {
+    SplashScreen.hide();;
+  }, []);;
 
   const Filter = useCallback(
     bidding => {
