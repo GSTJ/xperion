@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components/native';
-import { GREEN, RED, MIDTONE } from 'theme';
+import styled, {css} from 'styled-components/native';
+import {GREEN, RED, MIDTONE} from 'theme';
 
 export const Header = styled.View`
   background-color: ${MIDTONE};
@@ -7,23 +7,14 @@ export const Header = styled.View`
   flex-direction: row;
 `;
 
-export const Input = styled.TextInput`
+export const CustomInput = styled.TextInput`
   border: 2px ${MIDTONE};
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   color: white;
   font-family: 'Montserrat Regular';
   font-size: 15px;
 `;
-
-export const MultilineInput = styled(Input)`
-  padding: 15px 20px;
-  height: 200px;
-`;
-
-MultilineInput.defaultProps = {
-  textAlignVertical: 'top',
-};
 
 export const Subtitle = styled.Text`
   font-weight: normal;

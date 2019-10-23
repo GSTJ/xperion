@@ -23,7 +23,7 @@ export default props => {
               color={status}
               type={type}
             />
-            <Title as={!name && ShimmerPlaceHolder} autoRun>
+            <Title as={!name && ShimmerPlaceHolder} autoRun numberOfLines={1}>
               {name && name}
             </Title>
           </TitleContainer>
