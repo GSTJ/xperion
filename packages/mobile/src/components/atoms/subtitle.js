@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { SUBTITLE } from 'theme';
+import {SUBTITLE} from 'theme';
 
 export default styled.Text`
   font-family: 'Montserrat Bold';

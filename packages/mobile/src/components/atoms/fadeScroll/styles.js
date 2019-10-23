@@ -8,9 +8,9 @@ export const Container = styled(LinearGradient)`
   ${props =>
     props.rounded &&
     css`
-      margin-top: -40px;
-      border-top-left-radius: 40;
-      border-top-right-radius: 40;
+      margin-top: -20px;
+      border-top-left-radius: 20;
+      border-top-right-radius: 20;
     `}
 `;
 

@@ -13,7 +13,7 @@ import {
   BackButton,
   BottomFadeButton,
 } from 'components/atoms';
-import {PRIMARY, IMAGE_GRADIENT, ICON} from 'theme';
+import {TEXT, IMAGE_GRADIENT, ICON} from 'theme';
 import ShimmerPlaceHolder from 'react-native-shimmer-placeholder';
 import {Clock, Money} from 'icons';
 import {Indicator, CompanyCard} from 'components/molecules';
@@ -59,10 +59,7 @@ export default function Licitacao(props) {
               bidding && bidding.address.picture && bidding.address.picture.url,
           }}
         />
-        <BackButton
-          onPress={() => navigation.navigate('Home')}
-          fill={PRIMARY[0]}
-        />
+        <BackButton onPress={() => navigation.navigate('Home')} fill={TEXT} />
       </Gradient>
       <FadeScroll
         rounded

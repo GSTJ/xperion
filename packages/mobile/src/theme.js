@@ -8,7 +8,7 @@ export const TITLE = '#FFE665';
 export const SUBTITLE = '#FFE665';
 export const TEXT = '#F9F9F9';
 
-export const IMAGE_GRADIENT = 'rgba(232, 210, 14, 0.65)';
+export const IMAGE_GRADIENT = 'rgba(0,0,0, 0.5)';
 export const COMPLAINT = '#EF393B';
 export const ICON = '#FFE665';
 export const TAG = '#7931B8';
