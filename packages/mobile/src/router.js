@@ -1,6 +1,6 @@
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import {Home, Bidding, Complaint} from './routes';
+import {Home, Bidding, Complaint} from './views';
 
 const MainNavigator = createStackNavigator(
   {

@@ -1,4 +1,9 @@
-export { default as Separator } from './separator';
-export { default as Title } from './title';
-export { default as Subtitle } from './subtitle';
-export { default as Description } from './description';
+export {default as Separator} from './separator';
+export {default as Title} from './title';
+export {default as Subtitle} from './subtitle';
+export {default as Description} from './description';
+export {default as CurrentLocation} from './currentLocation';
+export {default as LicitationMarker} from './licitationMarker';
+export {default as FadeScroll} from './fadeScroll';
+export {default as BackButton} from './backButton';
+export {default as BottomFadeButton} from './bottomFadeButton';

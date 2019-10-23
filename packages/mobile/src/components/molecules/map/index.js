@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import MapView, {Marker, PROVIDER_GOOGLE} from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
 import {Alert, PermissionsAndroid} from 'react-native';
-import {CurrentLocation, LicitationMarker} from './components';
+import {CurrentLocation, LicitationMarker} from 'components/atoms';
 import MapStyle from './styles';
 
 function Map({markers = [], onMarkerPress, ...props}) {
