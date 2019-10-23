@@ -10,7 +10,7 @@ import {
 } from 'components/atoms';
 import {MIDTONE, PLACEHOLDER, ICON, TEXT} from 'theme';
 import {ThumbsUp, ThumbsDown} from 'icons';
-import {Header, CustomInput, Sideview, Toggle} from './styles';
+import {Header, Input, MultilineInput, Sideview, Toggle} from './styles';
 
 export default function Denuncia(props) {
   const {navigation} = props;
@@ -59,22 +59,20 @@ export default function Denuncia(props) {
         <KeyboardAvoidingView>
           <Title size={18}>Titulo</Title>
           <Separator height={20} />
-          <CustomInput
+          <Input
             placeholderTextColor={PLACEHOLDER}
             onChangeText={setTitle}
             value={title}
-            style={{paddingTop: 10, paddingBottom: 10}}
             placeholder="Ex: Problemas na Infraestrutura"
           />
 
           <Separator height={20} />
           <Title size={18}>Descrição</Title>
           <Separator height={20} />
-          <CustomInput
+          <MultilineInput
             placeholder="Deixe aqui um comentário sobre o motivo da sua denúncia!"
             onChangeText={setDescription}
             value={description}
-            style={{textAlignVertical: 'top', height: 200}}
             placeholderTextColor={PLACEHOLDER}
             multiline
             numberOfLines={5}
