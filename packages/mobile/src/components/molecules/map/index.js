@@ -17,15 +17,6 @@ function Map({markers = [], onMarkerPress, ...props}) {
     const GetPos = async () => {
       const granted = await PermissionsAndroid.request(
         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-        {
-          title: 'Cool Photo App Camera Permission',
-          message:
-            'Cool Photo App needs access to your camera ' +
-            'so you can take awesome pictures.',
-          buttonNeutral: 'Ask Me Later',
-          buttonNegative: 'Cancel',
-          buttonPositive: 'OK',
-        },
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
         const watchId = Geolocation.watchPosition(
