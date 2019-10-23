@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import MapView, {Marker, PROVIDER_GOOGLE} from 'react-native-maps';
+import {Marker} from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
 import {Alert, PermissionsAndroid} from 'react-native';
 import {CurrentLocation, LicitationMarker} from 'components/atoms';
-import MapStyle from './styles';
+import {MapView} from './styles';
 
-function Map({markers = [], onMarkerPress, ...props}) {
+export default ({markers = [], onMarkerPress, ...props}) => {
   // Localização inicial
   const [location, setLocation] = useState({
     latitude: -21.1826618,
@@ -42,18 +42,12 @@ function Map({markers = [], onMarkerPress, ...props}) {
   return (
     <MapView
       {...props}
-      mapPadding={{left: 0, right: 0, top: 0, bottom: 30}}
-      provider={PROVIDER_GOOGLE}
-      customMapStyle={MapStyle}
       region={{
         ...location,
         longitudeDelta: 0.01,
         latitudeDelta: 0.01,
       }}>
-      <Marker
-        anchor={{x: 0.5, y: 0.5}}
-        // onPress={() => navigate('Licitacao', { id })}
-        coordinate={location}>
+      <Marker anchor={{x: 0.5, y: 0.5}} coordinate={location}>
         <CurrentLocation />
       </Marker>
 
@@ -72,6 +66,4 @@ function Map({markers = [], onMarkerPress, ...props}) {
       })}
     </MapView>
   );
-}
-
-export default Map;
+};;
