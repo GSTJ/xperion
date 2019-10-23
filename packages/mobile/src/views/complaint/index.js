@@ -52,16 +52,12 @@ export default function Denuncia(props) {
           onPress={() => navigation.navigate('Bidding', {id})}
           fill={ICON}
         />
-        <Title size={24} numberOfLines={1}>
-          Denunciar
-        </Title>
+        <Title size={24}>Denunciar</Title>
       </Header>
 
       <FadeScroll>
         <KeyboardAvoidingView>
-          <Title size={18} numberOfLines={1}>
-            Titulo
-          </Title>
+          <Title size={18}>Titulo</Title>
           <Separator height={20} />
           <CustomInput
             placeholderTextColor={PLACEHOLDER}
@@ -72,9 +68,7 @@ export default function Denuncia(props) {
           />
 
           <Separator height={20} />
-          <Title size={18} numberOfLines={1}>
-            Descrição
-          </Title>
+          <Title size={18}>Descrição</Title>
           <Separator height={20} />
           <CustomInput
             placeholder="Deixe aqui um comentário sobre o motivo da sua denúncia!"
@@ -86,9 +80,7 @@ export default function Denuncia(props) {
             numberOfLines={5}
           />
           <Separator height={20} />
-          <Title size={18} numberOfLines={1}>
-            Essa obra é satisfatória?
-          </Title>
+          <Title size={18}>Essa obra é satisfatória?</Title>
           <Separator height={20} />
           <Sideview>
             <Toggle selected={toggle} onPress={() => setToggle(true)} green>
