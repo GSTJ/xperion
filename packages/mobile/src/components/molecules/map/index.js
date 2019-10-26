@@ -26,13 +26,14 @@ export default ({markers = [], onMarkerPress, ...props}) => {
           async position => {
             setLocation(position.coords);
             const pos = await Geocoder.from(position.coords);
+
             if (
               !pos.results ||
-              !pos.results[7] ||
-              !pos.results[7].address_components ||
-              !pos.results[7].address_components[0] ||
-              !pos.results[7].address_components[0].long_name ||
-              pos.results[7].address_components[0].long_name !==
+              !pos.results[0] ||
+              !pos.results[0].address_components ||
+              !pos.results[0].address_components[3] ||
+              !pos.results[0].address_components[3].long_name ||
+              pos.results[0].address_components[3].long_name !==
                 'Ribeirao Preto'
             ) {
               return Alert.alert(
