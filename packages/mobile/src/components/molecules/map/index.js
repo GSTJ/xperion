@@ -1,9 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import {Marker} from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
+import Geocoder from 'react-native-geocoding';
 import {Alert, PermissionsAndroid} from 'react-native';
 import {CurrentLocation, LicitationMarker} from 'components/atoms';
 import {MapView} from './styles';
+
+Geocoder.init('AIzaSyA6UspQCGWrvKUPyCtIx49YeH5wyS1keF4');
 
 export default ({markers = [], onMarkerPress, ...props}) => {
   // Localização inicial
@@ -20,7 +23,24 @@ export default ({markers = [], onMarkerPress, ...props}) => {
       );
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
         const watchId = Geolocation.watchPosition(
-          position => setLocation(position.coords),
+          async position => {
+            setLocation(position.coords);
+            const pos = await Geocoder.from(position.coords);
+            if (
+              !pos.results ||
+              !pos.results[7] ||
+              !pos.results[7].address_components ||
+              !pos.results[7].address_components[0] ||
+              !pos.results[7].address_components[0].long_name ||
+              pos.results[7].address_components[0].long_name !==
+                'Ribeirao Preto'
+            ) {
+              return Alert.alert(
+                'Indisponível para a sua cidade',
+                'No momento funcionamos somente em Ribeirão Preto, mas temos planos de expandir para todo o Brasil.',
+              );
+            }
+          },
           () => Alert.alert('Erro', 'Não foi possivel obter a sua localização'),
           {
             enableHighAccuracy: true,
@@ -66,4 +86,4 @@ export default ({markers = [], onMarkerPress, ...props}) => {
       })}
     </MapView>
   );
-};;
+};
