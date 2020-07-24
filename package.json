@@ -1,0 +1,31 @@
+{
+  "name": "xperion",
+  "description": "🦸‍♂️ XPerion is an app that helps the community watch and report problems within government projects.",
+  "version": "1.0.0",
+  "author": "Gabriel Sozza Taveira José <gabrielstaveira@gmail.com>",
+  "private": true,
+  "keywords": [
+    "Hackribeirão",
+    "Hackathon",
+    "React native",
+    "GovTech"
+  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/strapi",
+      "**/strapi/**"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@xperion/eslint-config": "*"
+  }
+}

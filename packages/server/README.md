@@ -1,9 +1,45 @@
-# XPerion CMS
+# 🦸‍♂️ XPerion
 
-A XPerion foi formada no Hackribeirão 2019, no qual ganhamos em segundo lugar.
+## 🚀 Getting started
 
-Somos uma startup que visa combater a corrupção no Brasil; estamos dando o primeiro passo para esse objetivo facilitando a visualização, denuncia e ficalização de obras públicas de forma anônima.
+1.  **Clone the repository**
 
-Aqui você pode ver a estrutura dos dados que guardamos, podendo garantir empiricamente sua anônimidade.
+    ```sh
+    git clone https://github.com/GSTJ/XPerion
+    cd XPerion/mobile
+    ```
 
-Essa é a estrutura do CMS da XPerion moldada com o Strapi, que é enviada diretamente para o Heroku.
+2.  **Install the necessary packages.**
+
+    ```sh
+    yarn
+    ```
+
+3.  **Create a config file.**
+
+    Create a .env file containing your MongoDB credentials within the following template:
+
+    ```sh
+    DATABASE_AUTHENTICATION_DATABASE=(string)
+    DATABASE_HOST=(string)
+    DATABASE_NAME=(string)
+    DATABASE_USERNAME=(string)
+    DATABASE_PASSWORD=(string)
+    DATABASE_SSL=(boolean)
+    ```
+
+4)  **Start developing.**
+
+    Initiate the project in development mode
+
+    ```sh
+    yarn setup
+    ```
+
+## 👷‍♂️ Building
+
+Once you're done developing, you can simply start it on your production server
+
+```sh
+yarn start
+```
