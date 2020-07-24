@@ -1,0 +1,41 @@
+{
+  "name": "xperion-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Essa é a estrutura do CMS da XPerion feita com o Strapi.",
+  "main": "./server.js",
+  "scripts": {
+    "setup": "cd admin && npm run setup",
+    "start": "node server.js",
+    "strapi": "node_modules/strapi/bin/strapi.js",
+    "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
+    "postinstall": "node node_modules/strapi/lib/utils/post-install.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "strapi": "3.0.0-alpha.26.2",
+    "strapi-hook-mongoose": "3.0.0-alpha.26.2",
+    "strapi-provider-upload-aws-s3": "^3.0.0-beta.17.3",
+    "strapi-utils": "3.0.0-alpha.26.2"
+  },
+  "author": {
+    "name": "Gabriel Taveira",
+    "email": "gabrielstaveira@gmail.com"
+  },
+  "strapi": {
+    "packageManager": "npm",
+    "uuid": "d9d61b50-c00f-45a6-ac12-c2f64b29a8f1"
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "license": "MIT"
+}

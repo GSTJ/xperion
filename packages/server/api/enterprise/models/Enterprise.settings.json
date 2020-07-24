@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "enterprise",
+  "info": {
+    "name": "enterprise",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "cnpj": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "address": {
+      "required": true,
+      "type": "string"
+    },
+    "biddings": {
+      "collection": "bidding",
+      "via": "enterprise"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "open": {
+      "required": true,
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}

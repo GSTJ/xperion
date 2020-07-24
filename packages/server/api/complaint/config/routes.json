@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/complaints",
+      "handler": "Complaint.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/complaints/count",
+      "handler": "Complaint.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/complaints/:_id",
+      "handler": "Complaint.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/complaints",
+      "handler": "Complaint.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/complaints/:_id",
+      "handler": "Complaint.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/complaints/:_id",
+      "handler": "Complaint.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

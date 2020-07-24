@@ -1,0 +1,76 @@
+{
+  "connection": "default",
+  "collectionName": "bidding",
+  "info": {
+    "name": "bidding",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "estimatedBudget": {
+      "type": "decimal"
+    },
+    "proposedBudget": {
+      "type": "decimal"
+    },
+    "type": {
+      "required": true,
+      "enum": [
+        "undefined",
+        "building",
+        "bridge",
+        "road",
+        "hospital",
+        "square",
+        "school",
+        "sport"
+      ],
+      "type": "enumeration"
+    },
+    "deadlineStart": {
+      "type": "date"
+    },
+    "deadlineEnd": {
+      "type": "date"
+    },
+    "status": {
+      "required": true,
+      "enum": [
+        "green",
+        "red",
+        "gray"
+      ],
+      "type": "enumeration"
+    },
+    "address": {
+      "model": "address",
+      "via": "biddings"
+    },
+    "complaints": {
+      "collection": "complaint",
+      "via": "bidding"
+    },
+    "punishments": {
+      "collection": "punishment",
+      "via": "bidding"
+    },
+    "enterprise": {
+      "model": "enterprise",
+      "via": "biddings"
+    },
+    "agency": {
+      "model": "agency",
+      "via": "biddings"
+    },
+    "description": {
+      "required": true,
+      "type": "text"
+    }
+  }
+}

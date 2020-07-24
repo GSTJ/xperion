@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/punishments",
+      "handler": "Punishment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/punishments/count",
+      "handler": "Punishment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/punishments/:_id",
+      "handler": "Punishment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/punishments",
+      "handler": "Punishment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/punishments/:_id",
+      "handler": "Punishment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/punishments/:_id",
+      "handler": "Punishment.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

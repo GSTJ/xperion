@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "answer",
+  "info": {
+    "name": "answer",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "required": true,
+      "type": "text"
+    },
+    "employee": {
+      "model": "employee"
+    }
+  }
+}
