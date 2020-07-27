@@ -8,7 +8,7 @@
 
 >  An app that helps the community watch and report problems within government projects.
 
---- -
+--- ---
 
 # :pushpin: Table of Contents
 
@@ -19,64 +19,61 @@
 
 # :construction_worker: Installation
 
-### Step 1°
+1. Install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/)
 
-**Install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/)**
+2. Clone the repository 
 
-### Step 2°
+   #### Via HTTPS
 
-#### Clone the repository 
-Via HTTPS
+    ```git clone https://github.com/GSTJ/XPerion.git```
 
-```git clone https://github.com/GSTJ/XPerion.git```
+   #### Via SSH
 
-Or, if you have an SSH key registered in your Github account, clone the project using this command:
+    ```git clone git@github.com:GSTJ/XPerion.git```
 
-```git clone git@github.com:GSTJ/XPerion.git```
+3. Follow further instructions
 
-### Step 3°
+    This is a monorepo, so there are two projects here with different instructions.
 
-This is a monorepo, so there are two projects here with different instructions.
+    #### 📱 Mobile
 
-#### 📱 Mobile
+    https://github.com/GSTJ/XPerion/tree/master/packages/mobile
 
-https://github.com/GSTJ/XPerion/tree/master/packages/mobile
+    #### 👨‍💻 Server
 
-#### 👨‍💻 Server
-
-https://github.com/GSTJ/XPerion/tree/master/packages/server
+    https://github.com/GSTJ/XPerion/tree/master/packages/server
 
 # :postbox: FAQ
 
-### 🙋‍ What is XPerion?
+  ### 🙋‍ What is XPerion?
 
-XPerion is an application that helps the community to watch and report problems within government projects. It was founded for Hackribeirão's Hackathon 2019, to fight corruption, in which we won second place.
+  XPerion is an application that helps the community to watch and report problems within government projects. It was founded for Hackribeirão's Hackathon 2019, to fight corruption, in which we won second place.
 
-Realizing the time and problems found in overpriced buildings in our country (Brazil) and how little knowledgeable the population was, we decided to give the community some powers!
+  Realizing the time and problems found in overpriced buildings in our country (Brazil) and how little knowledgeable the population was, we decided to give the community some powers!
 
-The platform itself is not yet fully automated. The process of registering projects and faults is still manual.
+  The platform itself is not yet fully automated. The process of registering projects and faults is still manual.
 
-### 👨‍🔬 What are the technologies used?
+  ### 👨‍🔬 What are the technologies used?
 
-Here are some of them:
+  Here are some of them:
 
-#### 📱 Mobile
+  #### 📱 Mobile
 
-React-native, react-navigation, styled-components, moment.js and react-native-maps
+  React-native, react-navigation, styled-components, moment.js and react-native-maps
 
-#### 👨‍💻 Server
+  #### 👨‍💻 Server
 
-Strapi, Amazon S3 and MongoDB
+  Strapi, Amazon S3 and MongoDB
 
-### 📲 Can i download it?
+  ### 📲 Can i download it?
 
-Yes, of course! But there is a catch. It is still not fully functional, and it works only in Ribeirão Preto/SP (Brazil)
+  Yes, of course! But there is a catch. It is still not fully functional, and it works only in Ribeirão Preto/SP (Brazil)
 
-If you still want to try, you can find it on the Play Store 🎉
+  If you still want to try, you can find it on the Play Store 🎉
 
-<a href="https://play.google.com/store/apps/details?id=com.xperion">
-<img src="https://github.com/steverichey/google-play-badge-svg/blob/master/img/pt-br_get.svg" width="150px">
-</a>
+  <a href="https://play.google.com/store/apps/details?id=com.xperion">
+  <img src="https://github.com/steverichey/google-play-badge-svg/blob/master/img/pt-br_get.svg" width="150px">
+  </a>
 
 # :tada: Contributing + :bug: Issues
 
