@@ -27,5 +27,8 @@
   "license": "MIT",
   "devDependencies": {
     "@xperion/eslint-config": "*"
+  },
+  "engines": {
+    "node": ">= 10.0.0"
   }
 }
